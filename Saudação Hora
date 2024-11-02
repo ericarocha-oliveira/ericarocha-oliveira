@@ -1,0 +1,24 @@
+# Função para verificar a saudação com base na hora
+def saudacao_por_hora():
+    hora = input("Digite a hora (0-23): ")
+
+    try:
+        # Converte a entrada para um inteiro
+        hora = int(hora)
+
+        # Verifica se a hora está dentro do intervalo válido
+        if 0 <= hora <= 23:
+            if 0 <= hora < 12:
+                print("Bom dia!")
+            elif 12 <= hora < 18:
+                print("Boa tarde!")
+            else:
+                print("Boa noite!")
+        else:
+            print("Por favor, digite uma hora válida (0-23).")
+    except ValueError:
+        # Informa que a entrada não é um número
+        print("Por favor, digite um número válido.")
+
+# Chama a função
+saudacao_por_hora()
