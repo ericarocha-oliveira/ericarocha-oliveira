@@ -1,0 +1,13 @@
+def verificar_numero():
+    entrada = input("Digite um número: ")
+    try:
+        numero = int(entrada)
+        if numero % 2 == 0:
+            print(f"{numero} é par.")
+        else:
+            print(f"{numero} é ímpar.")
+    except ValueError:
+
+        print("Por favor, digite um número válido.")
+
+verificar_numero()
