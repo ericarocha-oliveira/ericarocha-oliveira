@@ -1,0 +1,9 @@
+def soma (x, y):
+  return x + y
+
+# DEF DEFINI UMA FUNÇÃO 
+# RETURN RETORNA A CONTA DE VARIÁVEL + A OUTRA, CASO CONTRÁRIO DA ERRO
+
+soma1 = soma(2, 2)
+soma2 = soma(3, 3)
+print (soma1 + soma2)
